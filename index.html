@@ -139,15 +139,15 @@
             z-index: 1001;
         }
 
-        /* Hero Section */
+        /* Hero Section - Complete Restructure */
         .hero {
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             text-align: center;
-            padding: 4rem 1rem 2rem; /* Increased top padding to move content down */
+            padding: 8rem 1rem 2rem;
             position: relative;
             overflow: hidden;
         }
@@ -156,19 +156,17 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 1.5rem;
+            gap: 2rem;
             z-index: 10;
             position: relative;
             width: 100%;
-            margin-top: 2rem; /* Added margin to push content further down */
+            max-width: 1200px;
         }
 
-        /* Name Design - Above Image */
+        /* Name Design - Fixed Positioning */
         .name-container {
-            position: relative;
             width: 100%;
             margin-bottom: 1rem;
-            padding: 0 5%;
             z-index: 20;
         }
 
@@ -176,16 +174,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 1rem;
-            margin-bottom: 0.5rem;
+            gap: 1.5rem;
+            margin-bottom: 0.8rem;
         }
 
         .name-part {
             font-family: 'Orbitron', sans-serif;
             font-weight: 600;
-            font-size: clamp(1.5rem, 5vw, 3.5rem);
+            font-size: clamp(1.8rem, 6vw, 4rem);
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             position: relative;
             z-index: 2;
             color: var(--text-primary);
@@ -204,11 +202,11 @@
             text-shadow: 0 0 15px currentColor;
         }
 
-        /* Body Integration - Centered */
+        /* Body Integration - Adjusted */
         .body-integration {
             position: relative;
             width: 100%;
-            height: 40vh;
+            height: 35vh;
             z-index: 10;
             display: flex;
             justify-content: center;
@@ -310,7 +308,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 1rem;
+            gap: 1.2rem;
             margin-top: 1rem;
             max-width: 600px;
             z-index: 20;
@@ -319,7 +317,7 @@
 
         .name-subtitle {
             font-family: 'Inter', sans-serif;
-            font-size: clamp(1rem, 3vw, 1.3rem);
+            font-size: clamp(1.2rem, 3.5vw, 1.5rem);
             color: var(--accent-blue);
             letter-spacing: 1px;
             position: relative;
@@ -329,16 +327,17 @@
 
         .hero-subtitle {
             font-family: 'Inter', sans-serif;
-            font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+            font-size: clamp(1rem, 2.8vw, 1.3rem);
             color: var(--text-secondary);
             font-weight: 400;
             padding: 0 1rem;
             text-align: center;
+            line-height: 1.6;
         }
 
         .cta-button {
             display: inline-block;
-            padding: 0.8rem 2rem;
+            padding: 1rem 2.5rem;
             background: transparent;
             color: var(--accent-blue);
             border: 1px solid var(--accent-blue);
@@ -351,7 +350,7 @@
             overflow: hidden;
             transition: all 0.3s ease;
             z-index: 1;
-            font-size: 0.9rem;
+            font-size: 1rem;
             margin-top: 1rem;
         }
 
@@ -750,12 +749,12 @@
                 font-size: 1rem;
             }
             
-            .name-container {
-                padding: 0 10%;
+            .hero {
+                padding: 10rem 2rem 2rem;
             }
             
             .body-integration {
-                height: 50vh;
+                height: 40vh;
             }
             
             .about-content {
@@ -776,35 +775,19 @@
             .hero-subtitle {
                 padding: 0;
             }
-            
-            .hero {
-                padding: 5rem 2rem 2rem; /* More padding on larger screens */
-            }
-            
-            .hero-content {
-                margin-top: 3rem; /* More margin on larger screens */
-            }
         }
 
         @media (min-width: 1024px) {
-            .name-container {
-                padding: 0 15%;
+            .hero {
+                padding: 12rem 2rem 2rem;
             }
             
             .body-integration {
-                height: 55vh;
+                height: 45vh;
             }
             
             section {
                 padding: 8rem 2rem;
-            }
-            
-            .hero {
-                padding: 6rem 2rem 2rem; /* Even more padding on larger screens */
-            }
-            
-            .hero-content {
-                margin-top: 4rem; /* Even more margin on larger screens */
             }
         }
 
@@ -834,11 +817,11 @@
 
             .name-row {
                 flex-direction: column;
-                gap: 0.5rem;
+                gap: 0.8rem;
             }
 
             .body-integration {
-                height: 35vh;
+                height: 30vh;
             }
         }
 
