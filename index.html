@@ -141,13 +141,13 @@
 
         /* Hero Section */
         .hero {
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 0 1rem;
+            padding: 4rem 1rem 2rem; /* Increased top padding to move content down */
             position: relative;
             overflow: hidden;
         }
@@ -160,7 +160,7 @@
             z-index: 10;
             position: relative;
             width: 100%;
-            padding-top: 2rem; /* Added padding to bring content down */
+            margin-top: 2rem; /* Added margin to push content further down */
         }
 
         /* Name Design - Above Image */
@@ -314,7 +314,7 @@
             margin-top: 1rem;
             max-width: 600px;
             z-index: 20;
-            padding-bottom: 2rem; /* Added padding to ensure button is visible */
+            padding-bottom: 1rem;
         }
 
         .name-subtitle {
@@ -352,7 +352,7 @@
             transition: all 0.3s ease;
             z-index: 1;
             font-size: 0.9rem;
-            margin-top: 1rem; /* Increased margin to ensure visibility */
+            margin-top: 1rem;
         }
 
         .cta-button::before {
@@ -777,8 +777,12 @@
                 padding: 0;
             }
             
+            .hero {
+                padding: 5rem 2rem 2rem; /* More padding on larger screens */
+            }
+            
             .hero-content {
-                padding-top: 3rem; /* More padding on larger screens */
+                margin-top: 3rem; /* More margin on larger screens */
             }
         }
 
@@ -795,8 +799,12 @@
                 padding: 8rem 2rem;
             }
             
+            .hero {
+                padding: 6rem 2rem 2rem; /* Even more padding on larger screens */
+            }
+            
             .hero-content {
-                padding-top: 4rem; /* Even more padding on larger screens */
+                margin-top: 4rem; /* Even more margin on larger screens */
             }
         }
 
@@ -831,10 +839,6 @@
 
             .body-integration {
                 height: 35vh;
-            }
-            
-            .text-content {
-                padding-bottom: 3rem; /* More padding on mobile to ensure button visibility */
             }
         }
 
