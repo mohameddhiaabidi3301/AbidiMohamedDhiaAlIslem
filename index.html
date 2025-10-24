@@ -160,6 +160,7 @@
             z-index: 10;
             position: relative;
             width: 100%;
+            padding-top: 2rem; /* Added padding to bring content down */
         }
 
         /* Name Design - Above Image */
@@ -313,6 +314,7 @@
             margin-top: 1rem;
             max-width: 600px;
             z-index: 20;
+            padding-bottom: 2rem; /* Added padding to ensure button is visible */
         }
 
         .name-subtitle {
@@ -350,7 +352,7 @@
             transition: all 0.3s ease;
             z-index: 1;
             font-size: 0.9rem;
-            margin-top: 0.5rem;
+            margin-top: 1rem; /* Increased margin to ensure visibility */
         }
 
         .cta-button::before {
@@ -774,6 +776,10 @@
             .hero-subtitle {
                 padding: 0;
             }
+            
+            .hero-content {
+                padding-top: 3rem; /* More padding on larger screens */
+            }
         }
 
         @media (min-width: 1024px) {
@@ -787,6 +793,10 @@
             
             section {
                 padding: 8rem 2rem;
+            }
+            
+            .hero-content {
+                padding-top: 4rem; /* Even more padding on larger screens */
             }
         }
 
@@ -821,6 +831,10 @@
 
             .body-integration {
                 height: 35vh;
+            }
+            
+            .text-content {
+                padding-bottom: 3rem; /* More padding on mobile to ensure button visibility */
             }
         }
 
